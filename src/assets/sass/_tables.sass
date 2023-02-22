@@ -1,0 +1,42 @@
+table
+    border-collapse: collapse
+    
+td
+    padding: 1rem 1.5rem
+    border-bottom: 1px solid $color-border
+    
+.list-container
+    width: 100%
+    text-align: center
+    font-weight: 700
+    background-color: $color-white
+    &__header span
+        padding: 1rem 1.5rem
+        border-bottom: 1px solid $color-border
+    &__item 
+        & div
+            &.info
+                color: $color-white
+                background-color: $color-info
+            &.success
+                color: $color-white
+                background-color: $color-success
+        & .loading
+            padding: .3rem
+            & .pu-skeleton
+                padding: .75rem
+        & span
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 1rem 1.5rem
+            border: 1px solid $color-border
+            &.success
+                color: $color-white
+                background-color: $color-success
+            &.danger
+                color: $color-white
+                background-color: $color-danger
+            &.info
+                color: $color-white
+                background-color: $color-info
